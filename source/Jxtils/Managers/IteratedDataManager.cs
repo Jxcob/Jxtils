@@ -11,7 +11,7 @@ namespace Jxtils.Managers
         /// <summary>
         /// Where all the data is stored, as ints only.
         /// </summary>
-        private int[] Values { get; set; }
+        public int[] Values { get; set; }
 
         /// <summary>
         /// Sets the already existing data array to be equal to the provided array.
@@ -56,15 +56,6 @@ namespace Jxtils.Managers
         public override string ToString()
         {
             return string.Join("|", Values);
-        }
-
-        /// <summary>
-        /// Gets values.
-        /// </summary>
-        /// <returns>All the int array values.</returns>
-        public int[] GetValues()
-        {
-            return Values;
         }
     }
 }

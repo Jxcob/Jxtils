@@ -10,7 +10,7 @@ namespace Jxtils.Managers
         /// <summary>
         /// Where all the data is stored, as strings only.
         /// </summary>
-        private Dictionary<string, int> Values { get; set; }
+        public Dictionary<string, int> Values { get; set; }
 
         /// <summary>
         /// Replaces the already existing dictionary for the one provided.
@@ -63,15 +63,6 @@ namespace Jxtils.Managers
             }
 
             return string.Join("|", pairedData);
-        }
-
-        /// <summary>
-        /// Gets values.
-        /// </summary>
-        /// <returns>All the dictionary keys and values.</returns>
-        public Dictionary<string, int> GetValues()
-        {
-            return Values;
         }
     }
 }
