@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace Jxtils.Managers
 {
     /// <summary>
     /// A specific style of data conversion, useful for less storage-use in SQL databases. This is stored in a dictionary format.
     /// </summary>
-    public sealed class LabelledDataManager
+    public class LabelledDataManager
     {
         /// <summary>
         /// Where all the data is stored, as strings only.
@@ -55,14 +56,14 @@ namespace Jxtils.Managers
         /// <returns>The dictionary, but serialized and in string form.</returns>
         public override string ToString()
         {
-            List<string> pairedData = new List<string>();
+            StringBuilder stringBuilder = new StringBuilder();
 
             foreach (KeyValuePair<string, int> singularData in Values)
             {
-                pairedData.Add(singularData.Key + ":" + singularData.Value);
+                stringBuilder.Append(singularData.Key + ":" + singularData.Value + "|");
             }
 
-            return string.Join("|", pairedData);
+            return stringBuilder.Remove(stringBuilder.Length - 1, 1).ToString();
         }
     }
 }

@@ -6,7 +6,7 @@ namespace Jxtils.Managers
     /// <summary>
     /// Similar to the titled data converter, but for data repeated without names, and for intergers only.
     /// </summary>
-    public sealed class IteratedDataManager
+    public class IteratedDataManager
     {
         /// <summary>
         /// Where all the data is stored, as ints only.
