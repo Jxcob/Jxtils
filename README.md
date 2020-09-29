@@ -8,7 +8,7 @@
 		<img src="https://img.shields.io/github/v/release/mdawsonuk/DiscordExplorer?include_prereleases&style=flat-square&color=blue" /></a>
   </p>
   <p align="center">
-    For easier project development, with miscellaneous methods to save time.
+    For easier project development, with a range of functions and classes to save yourself time.
     <br />
   </p>
 </p>
